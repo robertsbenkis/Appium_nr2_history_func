@@ -49,5 +49,4 @@ report_screenshots/*.png
 .editorconfig
 
 ## AUT
-*.apk
 *.ipa
