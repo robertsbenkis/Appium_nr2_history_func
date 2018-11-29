@@ -17,4 +17,5 @@
 10) Type `adb devices` in terminal to confirm (device ID should be listed there)
 ### Running the project
 1) In terminal: navigate to project's directory
+2) Install app using `adb install -r PreciseUnitConversion.apk`
 2) Run command `cucumber`
