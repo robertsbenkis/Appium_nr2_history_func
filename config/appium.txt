@@ -4,3 +4,4 @@ platformName = "Android"
 appPackage = "com.ba.universalconverter"
 appActivity = "MainConverterActivity"
 autoGrantPermissions = true
+automationName = "uiautomator2"

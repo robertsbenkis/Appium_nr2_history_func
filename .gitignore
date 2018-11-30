@@ -42,9 +42,6 @@ appium_server.log
 *.json
 rerun.txt
 
-## Report screenshots
-report_screenshots/*.png
-
 ## rubymine editor config
 .editorconfig
 
