@@ -6,3 +6,5 @@ require 'test/unit/assertions'
 
 Appium::Driver.new(@caps, true)
 Appium.promote_appium_methods Object
+
+World(Test::Unit::Assertions)
