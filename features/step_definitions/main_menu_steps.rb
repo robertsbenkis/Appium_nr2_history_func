@@ -15,5 +15,5 @@ When(/^I select "([^"]*)" category$/) do |category|
 end
 
 Then('I should see side menu') do
-  assert_true(!@pages.side_menu.side_menu_sections.empty?)
+  expect(@pages.side_menu.side_menu_sections).not_to be_empty
 end

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 gem 'appium_lib'
 gem 'cucumber'
-gem 'test-unit'
+gem 'rspec-expectations'
+gem 'rubocop'
