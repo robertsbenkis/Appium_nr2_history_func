@@ -19,9 +19,11 @@ class BaseNumbersScreen
 
     def select_base_type(type)
       return if selected_base_type == type
+
+      open_base_type_category
       find_category type
       type_popup_elements.each do |element|
-        if element.text == name
+        if element.text == type
           element.click
           break
         end
@@ -35,5 +37,9 @@ class BaseNumbersScreen
         end
         text
     end
-  
+    
+    def open_base_type_category
+        base_type_element.click
+    end
+
 end
