@@ -59,17 +59,16 @@
      ```
      Save the data within step definitions:
      ```ruby
-     ...
-     base_value = @pages.numbers.entered_text
-     conversion_value = @pages.numbers.conversion_section_text
-     @saved_data = SavedConvertionData.new(base_value, conversion_value)
-     ...
+     And(/^Some step$/) do
+        base_value = @pages.numbers.entered_text
+        conversion_value = @pages.numbers.conversion_section_text
+        @saved_data = SavedConversionData.new(base_value, conversion_value)
+     end
      ```
      Then use the data:
      ```ruby
-     ...
+     And(/^I check that the value is the same  as when I navigate back from history$/)
      expect(@pages.numbers.base_section_text).to eql @saved_data.base_value
-     ...
      ```
 
 2. Add app installation on runtime:
