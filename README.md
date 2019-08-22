@@ -49,7 +49,7 @@
      - Reuse as much as possible
      - BONUS (we did not use it in our examples): create a class which manages test data:
      ```ruby
-     class SavedConvertionData
+     class SavedConversionData
          attr_reader :base_value, ...
          def initialize(base_value, ...)
              @base_value = base_value
