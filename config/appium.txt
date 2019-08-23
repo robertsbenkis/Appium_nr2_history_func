@@ -1,6 +1,7 @@
 [caps]
 deviceName = "Android"
 platformName = "Android"
+app = "PreciseUnitConversion.apk"
 appPackage = "com.ba.universalconverter"
 appActivity = "MainConverterActivity"
 autoGrantPermissions = true
