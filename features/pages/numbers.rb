@@ -25,4 +25,8 @@ class NumbersScreen < BaseNumbersScreen
     @driver.find_element(id: 'target_value')
   end
 
+  def source_value
+    @driver.find_element(id: 'source_value')
+  end
+
 end

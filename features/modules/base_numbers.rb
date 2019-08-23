@@ -60,4 +60,8 @@ class BaseNumbersScreen
         conversion_section_element.text
     end
 
+    def source_value_element
+      source_value.text
+    end
+
 end

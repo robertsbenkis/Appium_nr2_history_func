@@ -10,15 +10,15 @@ When(/^I swipe (right|left)$/) do |direction|
   MOBILE.swipe(direction)
 end
 
-When(/^I select "([^"]*)" category$/) do |category|
-  @pages.side_menu.select_category(category)
+When(/^I select "([^"]*)" category by searching "(.*)"$/) do |category, direction|
+  @pages.side_menu.select_category(category, direction)
 end
 
 Then('I should see side menu') do
   expect(@pages.side_menu.side_menu_sections).not_to be_empty
 end
 
-Given(/^I am in the "(.*)" screen$/) do |screen_name|
+Given(/^I am in the "(.*)" screen I searched "(.*)"$/) do |screen_name, direction|
   @pages.header_section.invoke_side_menu
-  @pages.side_menu.select_category(screen_name)
+  @pages.side_menu.select_category(screen_name, direction)
 end
